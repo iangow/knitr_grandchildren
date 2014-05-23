@@ -1,0 +1,12 @@
+\Sexpr{set_parent('../main_doc.Rnw')}
+
+<<get_data, child='data_step.Rnw', include=FALSE>>=
+@
+
+<<china_reg, dependson="data_step", results="asis">>=
+# Pretend that china.Rnw and world.Rnw are similar code using
+# the same data. They might have several tables each, but differ
+# in some way (in this case, one is using a subsample, but it could
+# be a different estimation approach, e.g., logit versus OLS)
+texreg(lm(y ~ X, data=the.data), caption="The World")
+@

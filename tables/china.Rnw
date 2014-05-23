@@ -1,0 +1,8 @@
+\Sexpr{set_parent('../main_doc.Rnw')}
+
+<<get_data, child='data_step.Rnw', include=FALSE>>=
+@
+
+<<china_reg, dependson="data_step", results="asis">>=
+texreg(lm(y ~ X, data=the.data, subset=country=="China"), caption = "China")
+@

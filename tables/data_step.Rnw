@@ -1,0 +1,22 @@
+\Sexpr{set_parent('../main_doc.Rnw')}
+
+<<libs, cache=FALSE, include=FALSE>>=
+library(texreg)
+@
+
+<<data_step, tidy=FALSE>>=
+# Pretend this is a big, complicated data step
+# that I want to be common to the two documents 
+# china.Rnw and world.Rnw
+N <- 1000
+
+countries <- c("Australia", "China")
+country <- sample(countries, size = N, replace=TRUE, 
+                  prob=c(0.7, 0.3))
+X <- rnorm(N)
+e <- rnorm(N, sd = 0.3)
+y_latent <- X * 2 + e
+y <- y_latent > 0
+
+the.data <- data.frame(y, X, country)
+@

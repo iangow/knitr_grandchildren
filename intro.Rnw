@@ -1,0 +1,5 @@
+\Sexpr{set_parent('main_doc.Rnw')}
+
+\section{Introduction}
+
+This is the best paper ever!

@@ -1,0 +1,15 @@
+\documentclass{article}
+
+\begin{document}
+
+<<intro, child='intro.Rnw'>>=
+@
+
+<<table_world, child='tables/world.Rnw'>>=
+@
+
+<<table_china, child='tables/china.Rnw'>>=
+@
+
+
+\end{document}
