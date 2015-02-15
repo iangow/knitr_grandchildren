@@ -1,10 +1,10 @@
-\Sexpr{set_parent('../main_doc.Rnw')}
+\Sexpr{set_parent('main_doc.Rnw')}
 
-<<libs, cache=FALSE, include=FALSE>>=
+<<cache=FALSE, include=FALSE>>=
 library(texreg)
 @
 
-<<data_step, tidy=FALSE>>=
+<<cache=FALSE, tidy=FALSE>>=
 # Pretend this is a big, complicated data step
 # that I want to be common to the two documents 
 # china.Rnw and world.Rnw

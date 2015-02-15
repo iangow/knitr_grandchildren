@@ -2,8 +2,7 @@
 
 \begin{document}
 
-<<intro, child='intro.Rnw'>>=
-@
+\input{intro.tex}
 
 <<table_world, child='tables/world.Rnw'>>=
 @
