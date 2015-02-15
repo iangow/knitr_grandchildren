@@ -7,3 +7,6 @@
 *.pdf
 *.synctex.gz
 *.tex
+!tables/china.tex
+!tables/world.tex
+!main_doc_tex.tex

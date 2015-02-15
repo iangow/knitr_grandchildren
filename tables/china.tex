@@ -1,0 +1,34 @@
+
+
+
+
+
+
+
+\begin{kframe}
+\begin{alltt}
+\hlkwd{texreg}\hlstd{(}\hlkwd{lm}\hlstd{(y} \hlopt{~} \hlstd{X,} \hlkwc{data}\hlstd{=the.data,} \hlkwc{subset}\hlstd{=country}\hlopt{==}\hlstr{"China"}\hlstd{),} \hlkwc{caption} \hlstd{=} \hlstr{"China"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\begin{table}
+\begin{center}
+\begin{tabular}{l c }
+\hline
+            & Model 1 \\
+\hline
+(Intercept) & $0.52^{***}$ \\
+            & $(0.02)$     \\
+X           & $0.39^{***}$ \\
+            & $(0.02)$     \\
+\hline
+R$^2$       & 0.64         \\
+Adj. R$^2$  & 0.63         \\
+Num. obs.   & 295          \\
+\hline
+\multicolumn{2}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
+\end{tabular}
+\caption{China}
+\label{table:coefficients}
+\end{center}
+\end{table}
+

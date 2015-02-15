@@ -1,0 +1,38 @@
+
+
+
+
+
+
+
+\begin{kframe}
+\begin{alltt}
+\hlcom{# Pretend that china.Rnw and world.Rnw are similar code using}
+\hlcom{# the same data. They might have several tables each, but differ}
+\hlcom{# in some way (in this case, one is using a subsample, but it could}
+\hlcom{# be a different estimation approach, e.g., logit versus OLS)}
+\hlkwd{texreg}\hlstd{(}\hlkwd{lm}\hlstd{(y} \hlopt{~} \hlstd{X,} \hlkwc{data}\hlstd{=the.data),} \hlkwc{caption}\hlstd{=}\hlstr{"The World"}\hlstd{)}
+\end{alltt}
+\end{kframe}
+\begin{table}
+\begin{center}
+\begin{tabular}{l c }
+\hline
+            & Model 1 \\
+\hline
+(Intercept) & $0.50^{***}$ \\
+            & $(0.01)$     \\
+X           & $0.40^{***}$ \\
+            & $(0.01)$     \\
+\hline
+R$^2$       & 0.63         \\
+Adj. R$^2$  & 0.63         \\
+Num. obs.   & 1000         \\
+\hline
+\multicolumn{2}{l}{\scriptsize{$^{***}p<0.001$, $^{**}p<0.01$, $^*p<0.05$}}
+\end{tabular}
+\caption{The World}
+\label{table:coefficients}
+\end{center}
+\end{table}
+
