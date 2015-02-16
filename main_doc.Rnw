@@ -4,6 +4,10 @@
 
 \input{intro.tex}
 
+<<read_data>>=
+temp <- read.csv("data/somefile.csv")
+@
+
 <<table_world, child='tables/world.Rnw'>>=
 @
 
