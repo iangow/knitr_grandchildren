@@ -4,6 +4,10 @@
 library(texreg)
 @
 
+<<cache=FALSE>>=
+temp <- read.csv("../data/somefile.csv")
+@
+
 <<cache=FALSE, tidy=FALSE>>=
 # Pretend this is a big, complicated data step
 # that I want to be common to the two documents 
